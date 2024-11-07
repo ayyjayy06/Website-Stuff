@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+        header img {
+            height: 60px;
+            margin-right: 180px;
+        }
+        .nav-bar {
+            display: flex;
+            gap: 90px;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-right: auto;
+            position: relative;
+        }
+        .nav-bar a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 0;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav-bar a:hover,
+        .nav-bar a:focus {
+            color: #0073e6;
+        }
+        .nav-bar a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+        .nav-bar a:hover::after,
+        .nav-bar a:focus::after {
+            width: 100%;
+        }
+        .donate-button {
+            background-color: #ff8c00;
+            color: #ffffff;
+            padding: 12px 24px;
+            border: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        .donate-button:hover {
+            background-color: #e67e00;
+        }
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .text-content {
+            max-width: 45%;
+        }
+        .heading {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+        .description {
+            font-size: 1.2em;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #ffd700;
+            border: none;
+            color: black;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button:hover {
+            background-color: #f0c300;
+        }
+        .image-container {
+            max-width: 50%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .approach-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            gap: 20px;
+        }
+        .approach-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            max-width: 300px;
+        }
+        .approach-card img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .approach-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .leadership-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .leadership-card {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .leadership-card img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+        @media (max-width: 768px) {
+            .leadership-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .leadership-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://gnnguidepost.org/wp-content/uploads/2018/01/https-cdn.evbuc_.com-images-33341052-34197552838-1-original-900x450.png" alt="Logo">
+        <nav class="nav-bar">
+            <a href="index.html" tabindex="1">Homepage</a>
+            <a href="aboutUs.html" tabindex="2">About Us</a>
+            <a href="ourImpact.html" tabindex="3">Our Impact</a>
+            <a href="partnerWUs.html" tabindex="4">Partner With Us</a>
+        </nav>
+        <a href="#" class="donate-button">Donate</a>
+    </header>
+    <div class="main-container">
+        <div class="text-content">
+            <div class="heading">Trusts its not the same as the homapge</div>
+            <div class="description">
+                I think it would look cool with our pic insead
+            </div>
+            <a href="#" class="cta-button">What We Do</a>
+        </div>
+        <div class="image-container">
+            <img src="https://tamilculture.com/storage/post_images/5b5325d55af5b.png" alt="Hugging Students">
+        </div>
+    </div>
+    <div class="section">
+        <h2>Our Approach</h2>
+        <div class="approach-container">
+            <div class="approach-card">
+                <a href="https://www.bing.com/images/search?view=detailV2&ccid=tihW4qSP&id=4EDF15992DC6044D87DAA813C48CC621D8690405&thid=OIP.tihW4qSP4narVQg40UWR9AAAAA&mediaurl=https%3a%2f%2fvignette.wikia.nocookie.net%2fdisney%2fimages%2f4%2f41%2fBaljeetFull.JPG%2frevision%2flatest%3fcb%3d20190722154112&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b62856e2a48fe276ab550838d14591f4%3frik%3dBQRp2CHGjMQTqA%26pid%3dImgRaw%26r%3d0&exph=624&expw=474&q=baljeet&simid=607990645023123852&FORM=IRPRST&ck=5E4490537DFEDF86A28D84A6DB4853DE&selectedIndex=1&itb=0">
+                    <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Insight">
+                </a>
+                <h3>Canva.com idea .</h3>
+                <p>We can put stuff like oh insightful.</p>
+            </div>
+            <div class="approach-card">
+                <a href="https://www.bing.com/images/search?view=detailV2&ccid=tihW4qSP&id=4EDF15992DC6044D87DAA813C48CC621D8690405&thid=OIP.tihW4qSP4narVQg40UWR9AAAAA&mediaurl=https%3a%2f%2fvignette.wikia.nocookie.net%2fdisney%2fimages%2f4%2f41%2fBaljeetFull.JPG%2frevision%2flatest%3fcb%3d20190722154112&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b62856e2a48fe276ab550838d14591f4%3frik%3dBQRp2CHGjMQTqA%26pid%3dImgRaw%26r%3d0&exph=624&expw=474&q=baljeet&simid=607990645023123852&FORM=IRPRST&ck=5E4490537DFEDF86A28D84A6DB4853DE&selectedIndex=1&itb=0">
+                    <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Courage">
+                </a>
+                <h3>TMK season 3.</h3>
+                <p>What to put.</p>
+            </div>
+            <div class="approach-card">
+                <a href="https://www.bing.com/images/search?view=detailV2&ccid=tihW4qSP&id=4EDF15992DC6044D87DAA813C48CC621D8690405&thid=OIP.tihW4qSP4narVQg40UWR9AAAAA&mediaurl=https%3a%2f%2fvignette.wikia.nocookie.net%2fdisney%2fimages%2f4%2f41%2fBaljeetFull.JPG%2frevision%2flatest%3fcb%3d20190722154112&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b62856e2a48fe276ab550838d14591f4%3frik%3dBQRp2CHGjMQTqA%26pid%3dImgRaw%26r%3d0&exph=624&expw=474&q=baljeet&simid=607990645023123852&FORM=IRPRST&ck=5E4490537DFEDF86A28D84A6DB4853DE&selectedIndex=1&itb=0">
+                    <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Action">
+                </a>
+                <h3>yay.</h3>
+                <p>Horrya for tea club.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" style="background-color: #f0f4f7;">
+        <h2>Our Leadership</h2>
+        <div class="leadership-container">
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Tequilla Brownie">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Leticia de la Vara">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Crystal Harmon">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Crystal Harmon">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Crystal Harmon">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Crystal Harmon">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Crystal Harmon">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Crystal Harmon">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <div class="leadership-card">
+                <img src="https://vignette.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt="Crystal Harmon">
+                <h4>Ihina Shukla.</h4>
+                <p>My Boss</p>
+            </div>
+            <!-- Add more leadership cards as needed -->
+        </div>
+    </div>
+</body>
+</html>
